@@ -3,6 +3,9 @@ def happy_bugs(b, n):
     if b.count("_") == n:
         return "YES"
 
+    if len(b) == 1:
+        return "NO"
+
     if b.count("_") > 0:
         b = sorted(b)
     for i in range(n):
